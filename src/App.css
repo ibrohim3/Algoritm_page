@@ -1,0 +1,518 @@
+main {
+  padding: 60px 60px;
+  margin: 25px 50px;
+  border-radius: 10px;
+  background-color: var(--bg-color);
+}
+.main {
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap;
+}
+.main .description {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.main .main-title {
+  font-size: var(--size-56);
+  color: var(--title-color);
+  text-transform: uppercase;
+}
+.main .main-info {
+  font-size: var(--size-17);
+  color: var(--info-color);
+}
+.main-img {
+  width: 500px;
+  position: relative;
+  top: 0;
+  right: 2%;
+}
+.main-img .btn {
+  padding: 5px 20px;
+  font-size: var(--size24);
+  font-weight: var(--title-weight);
+  color: var(--title-color);
+  backdrop-filter: blur(20px);
+  background-color: transparent;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  left: 53%;
+  bottom: 20%;
+  z-index: 999;
+}
+.gradient-text {
+  background: linear-gradient(90deg, #ffe259 0%, #f8d800 100%);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: var(--size36);
+  -webkit-text-fill-color: transparent;
+  animation: moveGradient 2s linear infinite;
+}
+@keyframes moveGradient {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 100% center;
+  }
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 60px;
+  flex-wrap: wrap;
+}
+.left-box {
+  width: 850px;
+}
+.stats-box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: var(--bg-color);
+}
+.stats-box h2 {
+  font-size: var(--size36);
+  color: var(--title-color);
+  font-weight: var(--main-weight);
+  margin-bottom: 20px;
+}
+.stats {
+  display: flex;
+  align-items: center;
+}
+.stat-item {
+  display: flex;
+  gap: 25px;
+}
+.stat-info h3 {
+  color: var(--title-color);
+  font-size: var(--size36);
+  font-weight: var(--main-weight);
+  margin-bottom: 10px;
+}
+.stat-info p {
+  width: 200px;
+  color: var(--info-color);
+  font-size: var(--size13);
+}
+.salary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-color);
+  margin: 20px 0;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.salary p {
+  width: 300px;
+  font-size: var(--size-17);
+  color: var(--title-color);
+  font-weight: var(--title-weight);
+  border-left: 4px solid var(--info-color2);
+  padding-left: 12px;
+}
+.salary-values {
+  display: flex;
+  gap: 30px;
+  /* flex-wrap: wrap; */
+  margin-right: 120px;
+}
+.salary-values span {
+  display: flex;
+  gap: 10px;
+  font-size: var(--size20);
+  color: var(--info-color);
+}
+.salary-values strong {
+  color: var(--title-color);
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.yellow-btn,
+.gray-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  font-size: var(--size-17);
+}
+.yellow-btn {
+  background-color: #ffd600;
+  color: #000;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.gray-btn {
+  background-color: #222;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+}
+.container .right-box {
+  width: 35%;
+  background-color: var(--bg-color);
+  border-radius: 16px;
+  padding: 30px;
+}
+.container .right-box h2 {
+  font-size: var(--size36);
+  font-weight: var(--main-weight);
+  color: var(--info-color2);
+}
+.container .right-box p {
+  font-size: var (--size13);
+  color: var(--info-color);
+  margin: 10px 0 20px 0;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.container form input::placeholder {
+  font-size: var(--size-19);
+  color: var(--info-color);
+}
+.container form input[type='text'],
+.consult form input[type='text'],
+.consult form input[type='tel'],
+.container form input[type='tel'] {
+  background-color: #000;
+  color: var(--title-color);
+  font-size: var(--size-19);
+  border: none;
+  border-radius: 10px;
+  padding: 16px;
+  font-size: 14px;
+  outline: none;
+}
+.container form input[type='tel'] {
+  width: 280px;
+}
+/* Input focu */
+form input:focus {
+  border: 0.5px solid #ffe000;
+  outline: none;
+}
+.number-sub {
+  display: flex;
+  justify-content: space-between;
+}
+form button {
+  background-color: var(--info-color2);
+  color: var(--bg-color);
+  border: none;
+  padding: 12px 30px;
+  font-weight: var(--title-weight);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: var(--size-19);
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  font-size: var(--size13);
+  color: var(--info-color);
+  gap: 8px;
+}
+
+.comfort-section {
+  padding: 25px 60px;
+}
+.theme {
+  font-size: var(--size32);
+  font-weight: var(--main-weight);
+  color: var(--title-color);
+  margin-bottom: 30px;
+  border-left: 4px solid var(--info-color2);
+  padding-left: 12px;
+}
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  width: 650px;
+  height: 180px;
+  border-radius: 20px;
+  background: var(--bg-color);
+  padding: 40px 30px;
+}
+.card .info h2 {
+  font-size: var(--size36);
+  font-weight: var(--main-weight);
+  color: var(--title-color);
+  margin-bottom: 8px;
+}
+.card .info p {
+  width: 390px;
+  font-size: var(--size-17);
+  color: var(--info-color);
+  line-height: 22px;
+}
+.comfort-section .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 66px;
+  height: 66px;
+  background: #fff6001a;
+  border-radius: 50%;
+}
+
+.students-section {
+  padding: 25px 60px;
+}
+.students {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.students-section .video-not {
+  position: relative;
+}
+.students-section .video-not img {
+  position: absolute;
+  z-index: 999;
+  top: 250px;
+  right: 45%;
+}
+.students-section .user {
+  padding: 25px 25px;
+  width: 338px;
+  height: 602px;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  border-radius: 20px;
+}
+.students-section .avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.students-section .desc {
+  margin-left: -40px;
+}
+.students-section .desc h3 {
+  font-size: var(--size30);
+  color: var(--title-color);
+}
+.students-section .desc p {
+  font-size: var(--size13);
+  color: var(--title-color);
+}
+.students-section .playBtn {
+  cursor: pointer;
+}
+.soon-section {
+  padding: 25px 60px;
+}
+.soon-section .boxs {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.soon-section .left-box {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 615px;
+}
+.soon-section .left-box .box {
+  height: 140px;
+  background-color: var(--bg-color);
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+.soon-section .right-box {
+  width: 615px;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  padding: 40px 35px;
+}
+.soon-section input,
+.soon-section select {
+  border: none;
+  outline: none;
+}
+.soon-section select {
+  background-color: var(--bg-color);
+  height: 74px;
+  font-size: var(--size20);
+  color: var(--info-color);
+  padding: 0 20px;
+  border-radius: 10px;
+}
+.soon-section .left-box p {
+  width: 170px;
+  font-size: var(--size-17);
+  color: var(--title-color);
+}
+.soon-section .btns {
+  display: flex;
+  gap: 10px;
+}
+.soon-section .left-box button {
+  border: none;
+  padding: 5px 12px;
+  border-radius: 6px;
+  background: #ffffff1a;
+  color: var(--title-color);
+  font-size: var(--size13);
+  cursor: pointer;
+}
+.soon-section hr {
+  margin: 20px 0;
+  width: 614px;
+  display: flex;
+  transform: translateX(-20px);
+  border: 1px solid #ffffff1a;
+}
+.soon-section .right-box .theme {
+  border: none;
+  padding: 0;
+  width: 480px;
+}
+/* .soon-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+} */
+.soon-section form input {
+  height: 74px;
+  border-radius: 10px;
+  background-color: #000;
+  color: var(--title-color);
+  font-size: var(--size-19);
+  padding: 16px;
+  font-size: 14px;
+}
+.soon-section form input[type='text'] {
+  width: 525px;
+  margin: 10px 0;
+}
+.soon-section form input[type='number'] {
+  width: 330px;
+}
+.soon-section input::placeholder {
+  font-size: var(--size20);
+  color: var(--info-color);
+}
+.soon-section .send-btn {
+  width: 180px;
+  height: 74px;
+  margin-left: 12px;
+}
+.soon-section .checkbox {
+  margin-bottom: -50px;
+}
+.location-section {
+  padding: 25px 70px;
+}
+.location-section .location {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+iframe {
+  border-radius: 10px;
+}
+.location-section .consult {
+  width: 470px;
+  height: 381px;
+  background-color: var(--bg-color);
+  padding: 25px 25px;
+  border-radius: 10px;
+}
+.location-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+.location-section .select {
+  background-color: #000;
+  color: var(--info-color);
+  font-size: var(--size-19);
+  border: none;
+  border-radius: 10px;
+  padding: 16px;
+  font-size: 14px;
+  outline: none;
+}
+.location-section .consult p {
+  margin-top: 10px;
+  font-size: var(--size13);
+  color: var(--info-color);
+}
+.location-section form input[type='tel'] {
+  width: 264px;
+}
+.location-section .footer {
+  width: 1360px;
+  height: 67px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+  background-color: var(--bg-color);
+  padding: 0 25px;
+}
+.location-section .footer div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.location-section .footer h3 {
+  font-size: var(--size24);
+  font-weight: var(--main-weight);
+  color: var(--title-color);
+}
+.location-section span {
+  font-size: var(--size20);
+  color: var(--info-color);
+}
+.location-section p {
+  font-size: var(--size20);
+  color: var(--title-color);
+}
+@media screen and (max-width: 768px) {
+  .container,
+  .salary, .comfort-section, .students-section, .soon-section, .location-section {
+    padding: 10px 25px;
+  }
+  .main {
+    margin: 15px -20px;
+  }
+}
