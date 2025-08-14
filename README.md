@@ -1,12 +1,30 @@
-# React + Vite
+# Algoritm O‘quv Markazi - Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ushbu loyiha **React.js** yordamida yaratilgan bo‘lib, Algoritm o‘quv markazi uchun zamonaviy, responsiv va tezkor landing page sifatida ishlab chiqilgan.
 
-Currently, two official plugins are available:
+## 📌 Texnologiyalar
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React.js
+- HTML5
+- CSS3 (va responsiv dizayn)
+- JavaScript (ES6+)
+- GitHub Pages (deploy)
 
-## Expanding the ESLint configuration
+## 🚀 Xususiyatlar
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Mobil va desktop qurilmalarga moslashgan (Responsive Design)
+- Tez yuklanish va optimallashtirilgan kod
+- Aniq va chiroyli UI/UX
+- O‘quv markazi haqida asosiy ma’lumotlar
+- Kurslar va aloqa bo‘limi
+
+## 🔗 Live Demo
+
+[Saytni ko‘rish](https://github.com/ibrohim3/Algoritm_page)
+
+## 👤 Author
+
+**Ibrohim Qosimov**
+
+- GitHub: [@Ibrohim](https://github.com/ibrohim3)
+- Email: ibrohim.2128382@gmail.com
